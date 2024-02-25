@@ -1,0 +1,15 @@
+.topBar{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    justify-content: center;
+    /* height: 40%; */
+}
+
+.menu {
+    /* margin-left: auto; */
+}
+
+.brand {
+    margin: auto;
+}

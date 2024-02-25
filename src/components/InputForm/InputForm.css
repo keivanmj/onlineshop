@@ -7,15 +7,20 @@
 .inputForm > button {
     margin: 10px;
     /* padding: 20px; */
-    /* font-size: 30px; */
-    width: 3%;
+    /* font-size: 70%; */
+    width: 20;
     height: 1%;
 }
 
 .inputForm > input {
     /* padding: 20px; */
     margin: 10px;
-    width: 73%;
+    width: 200px;
     height: 1%;
 }
 
+@media (max-width: 1080px) {
+    .inputForm > input {
+        width: 100px
+  }
+}
