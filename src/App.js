@@ -5,8 +5,8 @@ import InputForm from './components/InputForm/InputForm';
 import HomeTopBar from './components/HomeTopBar/HomeTopBar';
 import DragAndDrop from './components/DragAndDrop/DragAndDrop';
 import TestComponent from './components/TestComponent/TestComponent';
-import Laptops from './components/Laptops/Laptops';
-import
+import Laptops from './components/Items/Items';
+import SignIn from './components/SignIn/SignIn';
 
 function App() {
 
@@ -51,13 +51,15 @@ function App() {
       {/* <InputForm onSaveInput = {handleAddInput} onDeleteInput = {handleDeleteInput} ></InputForm>
       <ul>
         {listItems}
-      </ul>
-      <HomeTopBar/> */}
+  </ul>*/}
+      <HomeTopBar/>
       {/* <DragAndDrop/> */}
       {/* <TestComponent/> */}
-      <Laptops/>
+      {/* // <Laptops/> */}
+      {/* <SignIn/> */}
     </div>
   );
 }
+// import SignIn from './components/SignIn/SignIn';
 
 export default App;

@@ -13,3 +13,8 @@
 .brand {
     margin: auto;
 }
+
+.topBar {
+    padding-top : 20px;
+    border: 40px;
+}

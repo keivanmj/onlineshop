@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    border: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+
+    /* div {
+        
+    } */
+}
+
+div {
+    padding : 5px;
+}
+
+button {
+    width : 50px;
+    padding : 5px;
+    justify-content: center;
+    margin: auto;
+}
+
+input {
+    padding : 5px;
+    justify-content: center;
+    /* margin: auto; */
+    /* width: 400px; */
+}
+@media (max-width: 1200px) {
+    .card {
+        width: 275px;
+    }
+}
+

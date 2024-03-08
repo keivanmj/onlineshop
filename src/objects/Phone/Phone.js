@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Laptop {
+class Phone {
 
-    static type = "laptop";
+    static type = "phone";
 
-    constructor (picture, companyName, model, price) {
+    constructor(picture, companyname, model, price) {
         this.picture = picture;
-        this.companyName = companyName;
+        this.companyname = companyname;
         this.model = model;
         this.price = price;
     }
@@ -20,7 +20,7 @@ class Laptop {
     }
     
     getCompanyName() {
-        return this.companyName;
+        return this.companyname;
     }
 
     getModel() {
@@ -30,6 +30,6 @@ class Laptop {
     getPrice() {
         return this.price;
     }
-}  
+}
 
-export default Laptop;
+export default Phone

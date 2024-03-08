@@ -1,35 +1,25 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './HomeTopBar.css';
+import Menu from '../Menu/Menu';
 
 function HomeTopBar() {
 
-    // const [menuContents, setMenuContents] = useState()
-
-    // function handleExpand() {
-    //     setMenuContents
+    // function closeMenu() {
+    //     setShowContents(false);
     // }
+    
     return(
+        <div>
         <div className = "topBar">
             <div>
                 sign in
             </div>
-            <div className = "brand">
+            {/* <div className = "brand">
                 online shop
-            </div>
-            <div class = "menu">
-                <div class="menu-icon" onclick="toggleMenu()">
-                    ☰
-                </div>
-
-                {/* <div class="menu-content" id="menuContent"> */}
-                    {/* <!-- Your menu content goes here --> */}
-                    {/* <p>Menu Item 1</p>
-                    <p>Menu Item 2</p>
-                    <p>Menu Item 3</p> */}
-                {/* </div> */}
-            </div>
+            </div> */}
+            <Menu/>
+        </div>
         </div>
     )
 }
-
 export default HomeTopBar;
