@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import Laptop from '../../../objects/Laptop/Laptop';
-import Phone from '../../../objects/Phone/Phone';
-import TV from '../../../objects/TV/TV';
+import Product from '../../objects/Product/Product';
 
 function AddProductForm (props) {
     
@@ -11,6 +9,16 @@ function AddProductForm (props) {
     const [model, setModel] = useState("");
     const [price, setPrice] = useState("");
     const [product, setProduct] = useState(null);
+    const [id, setId] = useState(null);
+
+    // ids for different types of products:
+    // Laptop : 1*, * is the counter of laptops that were created until now, and 1 is the id of the laptop type
+    // Phone : 2*,
+    // TV : 3*,
+
+    function handleIdChange() {
+        setId(e.target.value);
+    }
 
     function handleCategory() {
         setCategory(e.target.value);
@@ -40,21 +48,14 @@ function AddProductForm (props) {
 
     function handleSave(e) {
         e.preventDefault();
-        if (category == "Laptop") {
-            setProduct(new Laptop(picture, companyName, model, price));
-        }
-        else if (category == "Phone") {
-            setProduct(new Phone(picture, companyName, model, price));
-        }
-        else if (category == "TV") {
-            setProduct(new TV(picture, companyName, model, price));
-        }
+        setProduct(new Product(category, id, picture, companyName, model, price));
         props.onAddProduct(product);
         setProduct(null);
     }
     
     return(
         <div>
+            <input type = "text" onChange = {handleIdChange} value = {id}/>
             <select value ={category} onChange={handleCategory}>
                 <option value="Laptop">Laptop</option>
                 <option value="Phone">Phone</option>

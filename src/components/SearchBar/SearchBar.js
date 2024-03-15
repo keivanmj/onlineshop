@@ -1,13 +1,6 @@
 import React, {useState} from 'react';
 import "./SearchBar.css"
 
-// const products = [
-//     "toothbrush",
-//     "toothpaste",
-//     "mouthwash",
-//     "bicycle"
-// ]
-
 function SearchBar(props) {
     
     const [searchValue, setSearchValue] = useState("");
@@ -26,7 +19,7 @@ function SearchBar(props) {
     })
 
     const shouldDisplayClearButton = searchValue.length > 0;
-    return (
+    return ( 
         <div>
             <input value = {searchValue} onChange = {handleChange} id = "searchValue"/>
             <button id = "searchButton">Search</button>

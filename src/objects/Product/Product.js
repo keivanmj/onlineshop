@@ -1,14 +1,18 @@
 import React from 'react';
 
-class TV {
+class Product {
 
-    static type = TV;
-
-    constructor(picture, companyname, model, price) {
+    constructor (type, id, picture, companyName, model, price) {
+        this.type = type;
+        this.id = id;
         this.picture = picture;
-        this.companyname = companyname;
+        this.companyName = companyName;
         this.model = model;
         this.price = price;
+    }
+
+    getId() {
+        return this.id;
     }
 
     getType () { 
@@ -20,7 +24,7 @@ class TV {
     }
     
     getCompanyName() {
-        return this.companyname;
+        return this.companyName;
     }
 
     getModel() {
@@ -30,6 +34,6 @@ class TV {
     getPrice() {
         return this.price;
     }
-}
+}  
 
-export default TV;
+export default Product;

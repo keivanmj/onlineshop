@@ -1,0 +1,13 @@
+.box {
+    display: flex;
+    border: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    flex-direction: row;
+    justify-content: center;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
